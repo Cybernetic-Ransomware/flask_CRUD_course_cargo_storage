@@ -1,0 +1,45 @@
+{% extends 'base_template.html' %}
+
+{% block title %}
+Registration
+{% endblock %}
+
+{% block content %}
+<body class="text-center">
+<div class="container">
+    <form method="POST" class="form-register">
+        {{ form.hidden_tag() }}
+        <img src="/static/images/aquila.png" alt="aquila" class="logo">
+        <h1 class="h3 mb-3 font-weight-normal">
+            Please Create your Account
+        </h1>
+
+        <br>
+        {{ form.username.label() }}
+        {{ form.username(class="form-control", placeholder="User name") }}
+
+        {{ form.email_address.label() }}
+        {{ form.email_address(class="form-control", placeholder="E-mail address") }}
+
+        {{ form.password_01.label() }}
+        {{ form.password_01(class="form-control", placeholder="Password") }}
+
+        {{ form.password_02.label() }}
+        {{ form.password_02(class="form-control", placeholder="Confirm Password") }}
+
+        <br>
+        {{ form.submit(class="btn btn-lg btn-block btn-primary") }}
+
+        <br>
+        <div class="checkbox mb-3">
+            <h6>Have you been here?</h6>
+            <a class="btn btn-sm btn-secondary" href="{{ url_for('login_page') }}">Login</a>
+        </div>
+
+
+    </form>
+</div>
+</body>
+
+{% endblock %}
+
