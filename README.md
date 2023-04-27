@@ -1,4 +1,5 @@
-# flask_CRUD_course_cargo_storage
+# Flask CRUD course
+# Cargo Storage Example
 
 ## Inspired by: flask_wallet_by_JimShapedCoding_on_freeCodeCamp
 ## https://youtu.be/Qr4QMBUPxWo
